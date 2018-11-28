@@ -12,7 +12,7 @@
 
     <style>
         body {
-            background-color:  #337357;
+            background-color: #FCBD60;
         }
 
         @font-face {
@@ -25,20 +25,31 @@
             src: url(Dimbo.ttf);
         }
 
-        .jumbotron {
-            background-color: #337357;
+        @font-face {
+            font-family: kuot;
+            src: url(Biko_Bold.otf);
         }
 
         #logo {
             font-family: logoKanmer;
             font-size: 85px;
-            color: #F58A07;
+            text-shadow: 2px 2px white;
+            margin-left: 75px;
         }
 
         h3 {
             font-family: basic;
-            color: #F58A07;
-            
+            color: grey;
+            font-size: 40px;
+
+        }
+
+        #a {
+            float: right;
+            font-family: kuot;
+            margin-right: 75px;
+            font-size: 30px;
+            margin-top: 40px;
         }
 
         h4 {
@@ -51,43 +62,93 @@
             text-align: center;
             margin-top: 70px;
         }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #FCBD60;
+
+        }
+
+        li {
+            float: left;
+            margin-right: 30px;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover {
+            background-color: #FCBD60;
+        }
+
+        .jumbotron {
+            margin-top: 20px;
+            background-color: #FCBD60;
+        }
     </style>
 </head>
 
 <body>
 
-    <div class="jumbotron text-center">
-        <h1 id="logo">Rumah</h1>
-        <h4 id="logo">Rancabentang</h3>
-    </div>
+    <div class="jumbotron">
 
-    <div class="container">
-        <div class="row">
-            <div id="center">
-                <div class="col-sm-6">
-                    <h3>Contact Us</h3>
-                    <img src="icons/girl.png" alt="">
-                    <h3>Owner</h3>
-                    <h3>Bu Adah</h3>
-                </div>
+        <ul>
+            <li>
+                <h1 id="logo">Rumah Rancabentang</h1>
+            </li>
+            <div id="a">
+                <li>
+                    <a class="active" href="about.html">Home</a>
+                </li>
+                <li>
+                    <a href="menu.html">Menu</a>
+                </li>
+                <li>
+                    <a href="gallery.html">Gallery</a>
+                </li>
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
+        </ul>
+        </div>
 
-                <div class="col-sm-6">
-                    <div id = "center">
-                    <img src="icons/smartphone.png" alt="" style="width:10%;">
-                    <br>
-                    <h3>087822856464</h3>
-                    <br>
-                    <br>
-                    <br>
-                    <img src="icons/address.png" alt="" style="width:10%;">
-                    <br>
-                    <h3>Jalan Rancabentang I No. 7</h3>
-                </div>
-                </div>
+        <div class="container">
+            <div class="row">
+                <div id="center">
+                    <div class="col-sm-6">
+                        <h3 style="font-size: 50px;color: white;">Contact Us</h3>
+                        <img src="icons/girl.png" alt="">
+                        <h3>Owner</h3>
+                        <h3>Bu Adah</h3>
+                    </div>
 
+                    <div class="col-sm-6">
+                        <div id="center" >
+                            <img src="icons/smartphone.png" alt="" style="width:10%;">
+                            <br>
+                            <h3>087822856464</h3>
+                            <br>
+                            <br>
+                            <br>
+                            <img src="icons/address.png" alt="" style="width:10%;">
+                            <br>
+                            <h3>Jalan Rancabentang I No. 7</h3>
+                            
+                            <h3>07.00-18.00</h3>
+                        </div>
+                    </div>
+
+                </div>
             </div>
         </div>
-    </div>
 </body>
 
 </html>

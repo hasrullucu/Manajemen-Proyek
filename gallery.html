@@ -21,13 +21,14 @@
         }
 
         body {
-            background-color: #0D1F2D;
+            background-color: #FCBD60;
         }
 
-        #logo {
+         #logo {
             font-family: logoKanmer;
-            font-size: 4em;
-            color: #FAE1DF;
+            font-size: 85px;
+            text-shadow: 2px 2px white;
+            margin-left: 75px;
         }
 
         .gallery {
@@ -59,16 +60,76 @@
             text-shadow: -2px -2px black;
 
         }
+
+        @font-face {
+            font-family: kuot;
+            src: url(Biko_Bold.otf);
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #FCBD60;
+
+        }
+
+        li {
+            float: left;
+            margin-right: 30px;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover {
+            background-color: #FCBD60;
+        }
+
+        .jumbotron {
+            margin-top: 20px;
+            background-color: #FCBD60;
+        }
+
+        #a {
+            float: right;
+            font-family: kuot;
+            margin-right: 75px;
+            font-size: 30px;
+            margin-top: 40px;
+        }
     </style>
 </head>
 
 <body>
-    <div class="jumbotron text-center header">
-        <h1 id="logo">Rumah Rancabentang </h1>
-        <h4 id="logo">Gallery</h3>
-    </div>
+        <div class="jumbotron">
 
-
+                <ul>
+                    <li>
+                        <h1 id="logo">Rumah Rancabentang</h1>
+                    </li>
+                    <div id="a">
+                        <li>
+                            <a class="active" href="about.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="menu.html">Menu</a>
+                        </li>
+                        <li>
+                            <a href="gallery.html">Gallery</a>
+                        </li>
+                        <li>
+                            <a href="contact.html">Contact</a>
+                        </li>
+                </ul>
+                </div>
+            </div>
 </body>
 <div class="container penampung">
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
